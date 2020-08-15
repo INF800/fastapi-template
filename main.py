@@ -4,7 +4,6 @@
 from fastapi import FastAPI
 app = FastAPI()
 
-
 # ----------------------------------------
 # setup templates folder
 # ----------------------------------------
@@ -16,7 +15,7 @@ templates = Jinja2Templates(directory="templates")
 # ----------------------------------------
 from fastapi.staticfiles import StaticFiles
 app.mount("/static", StaticFiles(directory="static"), name="static")
-# can use imgaes as it is eg. <img src='static.img.jpg'>
+# can use images as it is eg. <img src='static-img.jpg'>
 
 # ----------------------------------------
 # setup db
